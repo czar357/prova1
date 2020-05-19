@@ -38,13 +38,20 @@ int main()
     if (e == "D"){
         h = 5;
     }
-
+    i = h+g+c;
+    if (i>75){
+        j = "CLIENTE OURO";}
+    if (i<75&&i>25){
+        j = "CLIENTE PRATA";}
+    if (i<25){
+        j = "CLIENTE BRONZE";}
 
 
 //declarações
     cout <<endl<<"Score de volume de compras = "<<c<<" pontos" << endl;
     cout <<endl<<"Score de inadimplencia = "<<g<<" pontos" << endl;
     cout <<"Score de forma de pagamento = "<<h<<" pontos" << endl;
+    cout <<endl<<"Classificacao final = "<<j << endl;
     return 0;
 
 }
